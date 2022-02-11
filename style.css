@@ -1,38 +1,32 @@
+
 header{
-    
-    height: 800px;
+    min-height: 100vh;
     background-image: url(background.jpg);
-    
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
     padding-left: 29px;  
     font-family: 'Big Shoulders Stencil Text', cursive;
     padding-top: 10.5rem;  
-    
     border-radius: 0px 0px 10px 10px;
 }
 
-
-    
-
-.title2 {
-    color: aliceblue;
-    font-weight: bold;
+header nav div ul {
+width: 100%;
 }
-
 .page-section{
     margin-bottom: 50px;
 }
 #services{
    
-    background-color: #d8d7d7;
+  background-color:rgba(189, 184, 184,0.5);
     border-radius: 10px ;
+    padding-bottom: 15px;
+    margin:0;
 }
 .fab,.fas{
     font-size:150px;
     color: #141e2a;
-   
 }
 .section-heading{
     font-weight: bold;
@@ -40,16 +34,10 @@ header{
 #doneLogo{
     font-size: 15px;
 }
-#section_title{
-    padding-top: 93px;
 
-}
 #section_content{
-    margin-bottom: 0px;
-    padding-bottom: 100px;
-    margin-top: 100px;
     border-radius: 20px ;
-    
+    padding: 10px 0px;
 }
 #section_content p i {
     animation: section_stars 3s ease;
@@ -58,7 +46,7 @@ header{
 
 0%{
     opacity: 0;
-    transform: translateX(500px);
+    transform: translateX(125px);
 }
 100%{
 opacity: 1;
@@ -68,38 +56,29 @@ transform: translateX(0px);
 .stars
 {
   font-size: 40px;
-  color: #745335;
+  color: #b9a325;
 }
 /*css ajouté*/
+
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #a4a6a8;
+    background-color: #424141;
+    max-width:1989px ;
     
     
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link{
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
 }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover 
     {
         color: red;
 
     }
-    @media (min-width: 992px){
-    #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out ;
-  }}
-  #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color:  #d8d7d7 ;
-    padding-left: 160px;
-}
+
+  
 html {
     scroll-padding-top: 4.5rem;
   }
@@ -110,22 +89,15 @@ html {
     left: 0;
     z-index: 1030
   }
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-.nav-link{
-    font-weight: bold;
-    font-size: x-large;
-
-}
+ 
 
 
 .timeline {
     position: relative;
     padding: 69px;
     list-style: none;
-   
+    margin-top: 50px;
+   margin: 0;
     
   }
   .timeline:before {
@@ -184,7 +156,7 @@ html {
     margin-left: 0;
     text-align: center;
     color: white;
-    border: 7px solid #e9ecef;
+    border: 7px solid #1a4967;
     border-radius: 100%;
     
   }
@@ -248,7 +220,7 @@ html {
     .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
       font-size: 13px;
       line-height: 18px;
-      margin-top: 16px;
+     ;
     }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
@@ -308,69 +280,26 @@ html {
    #sectionPartTwo{
      background-color: #f7f5f5;
      border-radius: 20px;
+     padding: 20px 0px;
    }
    /*section contact
    */
+   footer{
+     height: 100%;
+   }
    #contact {
     background-color: #212529;
     background-image: url(map-image.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    margin-bottom: 0px;
    }
-  
-   
-section#contact .section-heading {
-  color: #fff;
-  padding-top: 50px;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-#contactForm{
- 
-display: flex;
-flex-direction: column;
-margin-top: 100px;
-}
+  .hh{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+   #hobbies{
+    background-color:rgba(189, 184, 184,0.5);
+    
+   }
